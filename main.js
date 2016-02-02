@@ -1,10 +1,11 @@
 require(
 	[
-		'jquery' : 'jquery-2.2.0.min'
+		'jquery-2.2.0.min'
 	],
-	function(){
-	console.log('main is loaded');
+	function(jq){
+		console.log('main is loaded', jq);
 
 
-	$('body').html('dddd');
-});
+		$('body').html('can now use jquery');
+	}
+);
